@@ -1,0 +1,940 @@
+<html>
+  <head>
+    <title>HOME</title>
+    <style type="text/css">
+      body {
+        background: #b9c7da;
+      }
+
+      #toparea {
+        height: 180px;
+        width: 100%;
+        float: left;
+        background: #b9c7da;
+        margin: 0;
+        border: solid 8px #091a32;
+        border-top: transparent;
+      }
+      #toplogo {
+        height: 160px;
+        width: 100px;
+        float: left;
+        margin: 10px;
+      }
+      #toplogo img {
+        height: 100px;
+        border-radius: 50%;
+        margin: 5px;
+      }
+      #toplogo p {
+        font-size: 20px;
+        color: #091a32;
+        font-weight: 300;
+      }
+      #topmenu {
+        height: 50px;
+        font-size: 25px;
+        background: #b9c7da;
+        float: right;
+        margin: 35px 0;
+      }
+      #topmenu ul {
+        display: flex;
+        float: right;
+      }
+      #topmenu ul li {
+        text-align: center;
+      }
+      #topmenu ul li a {
+        margin: 10px 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: #091a32;
+      }
+      #topmenu ul li a:hover {
+        background-color: #091a32;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 5px;
+      }
+      #menu {
+        height: 100px;
+        width: 100%;
+        font-size: 20px;
+        background: #b9c7da;
+        float: left;
+        border: solid 3px rgb(7, 15, 43);
+      }
+      #menuleft {
+        height: 100px;
+        width: 170px;
+        float: left;
+        background: rgb(7, 15, 43);
+      }
+      #side {
+        height: 100px;
+        width: 70px;
+        background: rgb(7, 15, 43);
+        float: left;
+      }
+      #shape {
+        height: 100px;
+        width: 100px;
+        float: left;
+      }
+      #box1 {
+        height: 50%px;
+        width: 100%;
+        background: #b9c7da;
+        display: block;
+      }
+      #box2 {
+        height: 50%;
+        width: 100%;
+        background: rgb(7, 15, 43);
+      }
+      #s1 {
+        height: 50%;
+        width: 50%;
+        background: rgb(7, 15, 43);
+        border-radius: 0 75% 0 0;
+      }
+      #s2 {
+        height: 50px;
+        width: 50px;
+        background: #b9c7da;
+        border-radius: 0 0 0 75%;
+        float: right;
+      }
+      #menuoption {
+        height: 100px;
+        width: ;
+        float: left;
+      }
+      #menuoption ul {
+        display: flex;
+        font-size: 25px;
+        margin-right: 500px;
+        text-align: center;
+      }
+
+      #menuoption ul li a {
+        margin: 10px 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: #091a32;
+      }
+      #menuoption ul li a:hover {
+        background-color: #091a32;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 5px;
+      }
+      #menuright {
+        height: 100px;
+        width: 170px;
+        background: #091a32;
+        float: right;
+      }
+      #shapeR {
+        height: 100px;
+        width: 100px;
+        background: #b9c7da;
+      }
+      #box1R {
+        height: 50%px;
+        width: 100%;
+        background: #b9c7da;
+        display: block;
+      }
+      #box2R {
+        height: 50%px;
+        width: 100%;
+        background: #091a32;
+        float: right;
+      }
+      #s1R {
+        height: 50%;
+        width: 50%;
+        background: #b9c7da;
+        float: left;
+      }
+      #s2R {
+        height: 50px;
+        width: 50px;
+        background: #091a32;
+        border-radius: 75% 0 0 0;
+        float: left;
+      }
+      #s3R {
+        height: 50px;
+        width: 50px;
+        background: #b9c7da;
+        border-radius: 0 0 75% 0;
+        float: left;
+      }
+      #s4R {
+        height: 50px;
+        width: 50px;
+        background: #091a32;
+        float: left;
+      }
+      #welcome {
+        height: 500px;
+        width: 100%;
+        background: #b9c7da;
+        float: left;
+        margin: 5px 0px;
+      }
+      #welcomeimage {
+        height: 500px;
+        width: 30%;
+        float: left;
+        border-radius: 20px;
+      }
+      #welcomeimage img {
+        border-radius: 20px;
+      }
+
+      #welcomeslide {
+        height: 450px;
+        width: 70%;
+        float: left;
+        margin: 10px 0;
+        border: solid 5px #031035;
+        border-left: 0px;
+        border-right: 0px;
+      }
+      #suggestion {
+        height: 1500px;
+        width: 45%;
+        background: #b9c7da;
+        float: left;
+        overflow: auto;
+      }
+      .suggestionbox {
+        height: 300px;
+        width: 1000px;
+        background-color: #b9c7da;
+        margin: 10px 0;
+        padding: 0 20px;
+      }
+      .suggestionimg {
+        height: 250px;
+        width: 200;
+        margin-top: 20px;
+        margin-left: 30px;
+        transform: skew(-15deg);
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        float: left;
+      }
+      .suggestionimg img,
+      .suggestionimg {
+        height: 251px;
+        width: 200;
+        border-radius: 20px 20px 0 20px;
+        z-index: 1000;
+      }
+      .suggestiontext {
+        height: 230px;
+        width: 600px;
+        border-radius: 0 20px 0 0;
+        background: #b9c7da;
+        margin: 40px 0;
+        transform: skew(-15deg);
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        float: left;
+      }
+      .suggestiontext h1 {
+        font-size: 50;
+        text-align: center;
+        font-weight: bold;
+      }
+      .suggestiontext p {
+        font-size: 20;
+        text-align: left;
+        font-weight: bold;
+        padding-left: 5px;
+      }
+      #tranding {
+        height: 1500px;
+        width: 35%;
+        background: #b9c7da;
+        float: right;
+        overflow: auto;
+        
+      }
+      .trandingbox {
+        height: 500px;
+        width: 600px;
+        margin: 20px 10%;
+        background-color: #b9c7da;
+        float: right;
+      }
+      .trandingtext {
+        height: 230px;
+        width: 600px;
+        background: #b9c7da;
+        margin-top: 220px;
+        margin-left: 50px;
+        border-radius: 20px;
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .trandingtext P {
+        font-size: 18px;
+        overflow: hidden;
+      }
+      .trandingimg {
+        height: 290px;
+        width: 250;
+        margin-bottom: 350px;
+        border-radius: 20px 20px 70px 70px;
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        z-index: 200;
+      }
+      #tranding img {
+        height: 290px;
+        width: 250;
+      }
+      .trandingimg img {
+        height: 290px;
+        width: 250;
+        border-radius: 20px 20px 70px 70px;
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+      }
+
+      #location {
+        height: 800px;
+        width: 100%;
+        background: #a9bbd6;
+        float: left;
+      }
+      #location p {
+        font-size: 50px;
+        text-align: center;
+      }
+      .loc {
+        height: 400px;
+        width: 350px;
+        padding-top: 50px;
+        background: #091a32;
+        float: left;
+        display: flex;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      #locbox {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        float: left;
+        text-align: center;
+      }
+      .loc {
+        font-size: 20px;
+        color: #091a32;
+        justify-content: center;
+        background: #a9bbd6;
+        box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.4),
+          10px 10px 0px 0px rgba(0, 0, 0, 0.3),
+          15px 15px 0px 0px rgba(0, 0, 0, 0.2),
+          20px 20px 0px 0px rgba(0, 0, 0, 0.1);
+        border: solid 2px #091a32;
+        display: block;
+      }
+      .loc:hover {
+        height: 450px;
+        width: 380px;
+        color: #fff;
+
+        background: linear-gradient(1.2deg, #a9bbd6 0.3%, #091a32 88.7%);
+      }
+      .loc img {
+        height: 250;
+      }
+      #textarea {
+        height: 1400px;
+        width: 100%;
+        font-size: 20px;
+        text-align: justify;
+        clear: both;
+        background: #a9bbd6;
+        color: #031035;
+      }
+      #textarea h3 {
+        margin: 20px 10px 0 10px;
+        padding: 1px 0 10px 10px;
+      }
+      #textarea p {
+        margin: 4px 10px 0 10px;
+        padding: 1px 10px 5px 10px;
+      }
+
+      #footer {
+        height: 1400px;
+        width: 100%;
+        background: #171414;
+        align-items: center;
+        background: linear-gradient(#a9bbd6 1.1%, #091a32);
+        position: relative;
+      }
+      #footerlogo
+       {
+        height: 220px;
+        width: 220px;
+        position: relative;
+        left: 48%;
+        top: 30;
+        margin: 50px 0;
+        border: solid 5px #031035;
+
+        
+      }
+      #footerlogo h1{
+        text-align: center;
+        color: #031035;
+      }
+
+      #footerlogo img {
+        height: 200px;
+        border-radius: 50%;
+        float: none;
+        padding: 10px;
+      }
+
+      .ftop {
+        height: 700px;
+        width: 400px;
+        float: left;
+        margin: 50px 80px;
+      }
+      #footer1,
+      #footer2 {
+        width: 500px;
+        margin-right: 0px;
+        padding: 10px;
+        font-size: 20px;
+        color: #c7cdd6;
+        text-align: justify;
+      }
+      #lern_more {
+        width: 100%;
+        margin-top: 100px;
+        padding: 0;
+      }
+      #lern_more p {
+        font-size: 22px;
+        margin: 10px;
+        padding: 0;
+      }
+      #lern_more p a ,#footer3 p a{
+        text-decoration: none;
+        color: #c7cdd6;
+        font-size: 22px;
+      }
+      #footer3 {
+        width: 800px;
+      }
+      #footer3 img {
+        height: 100px;
+      }
+      #footer h3 {
+        font-size: 30px;
+        color: #c7cdd6;
+      }
+      #social_link img {
+        height: 80px;
+        margin: 50px 10px;
+        padding: 0;
+      }
+      #fbottom {
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: #000;
+      }
+      #fbottom p {
+        color: #fff;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 85px;
+        top: 85px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainarea">
+      <div id="toparea">
+        <div id="toplogo">
+          <img src="logo.jpg" alt="logo" />
+          <p><b>NAVIGATOR </b></p>
+        </div>
+        <div id="topmenu">
+          <ul type="none">
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Favarite tour</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu">
+        <div id="menuleft">
+          <div id="side"></div>
+          <div id="shape">
+            <div id="box1">
+              <div id="s1"></div>
+            </div>
+            <div id="box2">
+              <div id="s2"></div>
+            </div>
+          </div>
+        </div>
+        <div id="menuoption">
+          <ul type="none">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PACKAGES</a></li>
+            <li><a href="#">PLACE</a></li>
+            <li><a href="#">HOTEL</a></li>
+            <li><a href="#">RESTURENT </a></li>
+            <li><a href="#">HELP </a></li>
+          </ul>
+        </div>
+        <div id="menuright">
+          <div id="shapeR">
+            <div id="box1R">
+              <div id="s1R"></div>
+              <div id="s2R"></div>
+            </div>
+            <div id="box2R">
+              <div id="s3R"></div>
+              <div id="s4R"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="welcome">
+          <div id="welcomeimage">
+            <img src="welcome1.jpg" height="500px" width="100%" />
+          </div>
+          <div id="welcomeslide">
+            <img src="ram.jpg" height="450px" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- here i creating suggestion section -->
+
+    <div id="suggestion">
+      <h1><u>SUGGESTION </u></h1>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Agra-imghh.jpg" alt="" height="2px" width="200px" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Agra</h1>
+          <p calss="Sugtext">
+            Agra is home to the beautiful Taj Mahal. On your visit to Agra, also
+            visit Agra Fort, Fatehpur Sikri and Sikandra.
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Chennai-Imghh.png" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Chennai</h1>
+          <p calss="Sugtext">
+            Chennai, the first city of the south, and capital of Tamil Nadu
+            widely known as Madras till 1996, has a rich tradition and
+            civilisation
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Jaipur.jpg" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Jaipur</h1>
+          <p calss="Sugtext">
+            Built by the warrior-astronomer Raja Sawai Jai Singh II in 1727.
+            Jaipur is a charming place, which dazzles the eye of tourist
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Khajuraho.jpg" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Khajuraho</h1>
+          <p calss="Sugtext">
+            The 9th to 12th century temples of Khajuraho is the evidences of the
+            architectural geniuses during the times of Chandela dynasty.
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Kochi-Imghh.png" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Kochi</h1>
+          <p calss="Sugtext">
+            Formerly, Cochin, was the centre of Indian spice trade for many
+            centuries, and was known to the Yavanas (Greeks) as well as Romans
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Mahabalipuram-Imghh.png" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Mahabalipuram</h1>
+          <p calss="Sugtext">
+            Mahabalipuram, located around 60 km away from Chennai in Tamil Nadu,
+            is known as the City of Temples.
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Mandawa.jpg" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Mandawa</h1>
+          <p calss="Sugtext">
+            Mandawa is a picturesque town occupying the heart of the Shekhawati
+            region of Rajasthan. Visit this place and you will be reminded
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Marari-beach-Imghh.png" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Marari</h1>
+          <p calss="Sugtext">
+            Upon reaching Kerala, if you ever wish to spend some time in solace,
+            by the beach, then make your way to the Marari Beach town, located
+            in the Alappuzha district
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Mumbai.jpg" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Mumbai</h1>
+          <p calss="Sugtext">
+            Mumbai, is the capital city of the Indian state of Maharashtra. lies
+            on the west coast of India and has a deep natural harbour.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- here i creating tranding section -->
+    <div id="tranding">
+      <h1><u> TRENDING </u></h1>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Mahabalipuram-Imghh.png" alt="imgame" />
+            <h2>Mahabalipuram</h2>
+            <p>
+              Mahabalipuram, located around 60 km away from Chennai in Tamil
+              Nadu, is known as the City of Temples.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Agra-imghh.jpg" alt="imgame" />
+            <h1>Agra</h1>
+            <p>
+              Agra is home to the beautiful Taj Mahal. On your visit to Agra,
+              also visit Agra Fort, Fatehpur Sikri and Sikandra.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Chennai-Imghh.png" alt="imgame" />
+            <h1>Chennai</h1>
+            <p>
+              Chennai, the first city of the south, and capital of Tamil Nadu
+              widely known as Madras till 1996, has a rich tradition and
+              civilisation
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Jaipur.jpg" alt="imgame" />
+            <h1>Jaipur</h1>
+            <p>
+              Built by the warrior-astronomer Raja Sawai Jai Singh II in 1727.
+              Jaipur is a charming place, which dazzles the eye of tourist
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Mumbai.jpg" alt="imgame" />
+            <h1>Mumbai</h1>
+            <p>
+              Mumbai, is the capital city of the Indian state of Maharashtra.
+              lies on the west coast of India and has a deep natural harbour.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Udaipur-Imghh.png" alt="imgame" />
+            <h1>Udaipur</h1>
+            <p>
+              Snuggled up beside the tranquil Lake Pichola, Udaipur is a city
+              which stands true to the heritage of being a royal counterpart of
+              Rajasthan
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="location">
+      <p>CATOGRIES THAT BOOT YOUR CELEBRATION</p>
+
+      <div id="locbox">
+        <div class="loc" id="l1">
+          <p>SPIRITUAL</p>
+          <img src="temple.png" />
+        </div>
+        <div class="loc" id="l2">
+          <p>HISTORICAL</p>
+          <img src="hisorical.png" />
+        </div>
+        <div class="loc" id="l3">
+          <p>PARKS</p>
+          <img src="park.png" />
+        </div>
+        <div class="loc" id="l4">
+          <p>MUSEUM</p>
+          <img src="museum.png" />
+        </div>
+      </div>
+    </div>
+    <div id="textarea">
+      <h3>Product Offering</h3>
+      <p>
+        Flights, International Flights, Charter Flights, Hotels, International
+        Hotels, Homestays and Villas, Activities, Holidays In India,
+        International Holidays, Book Hotels From UAE, myBiz for Corporate
+        Travel, Book Online Cabs, Book Bus Tickets, Book Train Tickets, Cheap
+        Tickets to India, Book Flights From US, Book Flights From UAE, Trip
+        Planner, Forex Card, Buy Foreign Currency, Gift Cards, Gift, Wedding
+        Gift, Anniversary Gift, Birthday Gift, Diwali Gift, Valentines Gift,
+        Farewell Gift, Christmas Gift, New Year Gift, Trip Money, Trip Ideas,
+        Travel Blog, PNR Status, MakeMyTrip Advertising Solutions, One Way Cab
+        MakeMyTrip
+      </p>
+      <h3>NAVIGATOR</h3>
+      <p>
+        About Us, Investor Relations, Careers, MMT Foundation, Legal Notices,
+        CSR Policy, myPartner - Travel Agent Portal, Foreign Exchange, List your
+        hotel, Partners- Redbus, Partners- Goibibo, Advertise with Us,
+        Holiday-Franchise, Partners- BookMyForex, RedBus Ferry Malaysia, RedBus
+        Ferry Singapore, redBus Vietnam, redBus Cambodia, Things to Do in
+        Malaysia, Things to Do in Singapore
+      </p>
+      <h3>About the Site</h3>
+      <p>
+        Customer Support, Payment Security, Privacy Policy, Cookie Policy, User
+        Agreement, Terms of Service, Franchise Offices, Make A Payment, Work
+        From Home, Escalation Channel, Report Security Issues
+      </p>
+      <h3>Top Hotels in India</h3>
+      <p>
+        Fairmont Jaipur, St Regis Goa, Six Senses Fort Barwara, W Goa, Grand
+        Hyatt Goa, Shangri-La Bangalore, The St Regis Mumbai, Taj Rishikesh,
+        Grand Hyatt Mumbai, Le Meridien Delhi, Rambagh Palace Jaipur, Leela
+        Palace Chennai, The Leela Palace Udaipur, Taj Lake Palace Udaipur, Jw
+        Marriott Chandigarh, Alila Diwa Goa, Le Meridien Goa, Taj Lands End
+        Mumbai, Itc Grand Chola Chennai, Itc Maratha Mumbai, Oberoi Udaivilas,
+        Jai Mahal Palace Jaipur, Taj Mahal Tower Mumbai, Marriott Suites Pune,
+        Park Hyatt Chennai, The Leela Palace Jaipur, Jw Marriott Mumbai Sahar,
+        Jw Marriott Mumbai Juhu, The Ritz Carlton Bengaluru, The Oberoi New
+        Delhi, Taj Resort & Convention Centre Goa, Taj Bengal Kolkata, Taj
+        Coromandel Chennai, The Oberoi Gurgaon, The Westin Goa, Jw Marriott
+        Hotel Pune, The Leela Palace New Delhi, Taj West End Bengaluru, The Taj
+        Mahal Palace Mumbai, Best Hotels in India
+      </p>
+      <h3>Book Hotels in India from Top Destinations</h3>
+      <p>
+        Hotels in Jaipur, Hotels in Goa, Hotels in Delhi, Hotels in Udaipur,
+        Hotels in Gurgaon, Hotels in Mumbai, Hotels in Bangalore, Hotels in
+        Rishikesh, Hotels in Agra, Hotels in Chennai, Hotels in Kasauli, Hotels
+        in Kolkata, Hotels in Pune, Hotels in Manali, Hotels in Lonavala, Hotels
+        in Shimla, Hotels in Munnar, Hotels in Ayodhya, Hotels in Gulmarg,
+        Hotels in Leh, Hotels in Hyderabad
+      </p>
+      <h3>Top International hotels</h3>
+      <p>
+        Adaaran Club Rannalhi, Marina Bay Sands Singapore, Coco Bodu Hithi, Taj
+        Dubai, Atlantis Hotel Dubai, Amari Phuket, Jw Marriott Dubai, Armani
+        Hotel Dubai, Grand Hyatt Dubai, Saii Lagoon Maldives, Gevora Hotel
+        Dubai, Hyatt Regency Dubai, Pan Pacific Singapore, The Palm Dubai,
+        Caesars Palace, Baiyoke Sky Hotel, Centara Pattaya Hotel, Embudu
+        Village, Orchard Hotel Singapore, Reethi Beach Resort, Ambassador Hotel
+        Bangkok, Dusit Thani Pattaya, Shangri La Singapore, Sunbeam Hotel
+        Pattaya, Taj Samudra Colombo, Bangkok Palace Hotel, Hilton Pattaya,
+        Novotel Phuket Resort, Taj Exotica Resort Maldives, Village Hotel Bugis,
+        Avani Atrium Bangkok, The Plaza New York, Village Hotel Albert Court,
+        Amari Pattaya
+      </p>
+      <h3>Quick Links</h3>
+      <p>
+        elhi Chennai Flights, Delhi Mumbai Flights, Delhi Goa Flights, Chennai
+        Mumbai flights, Mumbai Hyderabad flights, Kolkata to Rupsi Flights,
+        Rupsi to Guwahati Flights, Pasighat to Guwahati Flights, Delhi to
+        Khajuraho Flights, Cochin to Agatti Island Flights, Hotels in Delhi,
+        Hotels in Mumbai, Hotels In Goa, Hotels In Jaipur, Hotels In Ooty,
+        Hotels In Udaipur, Hotels in Puri, Hotels In North Goa, Hotels In
+        Rishikesh, Honeymoon Packages, Kerala Packages, Kashmir Packages, Ladakh
+        Packages, Goa Packages, Thailand Packages, Sri Lanka Visa, Thailand
+        Visa, Explore Goa, Explore Manali, Explore Shimla, Explore Jaipur,
+        Explore Srinagar
+      </p>
+      <h3>Important Links</h3>
+      <p>
+        Delhi Chennai Flights, Delhi Mumbai Flights, Delhi Goa Flights, Chennai
+        Mumbai flights, Mumbai Hyderabad flights, Kolkata to Rupsi Flights,
+        Rupsi to Guwahati Flights, Pasighat to Guwahati Flights, Delhi to
+        Khajuraho Flights, Cochin to Agatti Island Flights, Hotels in Delhi,
+        Hotels in Mumbai, Hotels In Goa, Hotels In Jaipur, Hotels In Ooty,
+        Hotels In Udaipur, Hotels in Puri, Hotels In North Goa, Hotels In
+        Rishikesh, Honeymoon Packages, Kerala Packages, Kashmir Packages, Ladakh
+        Packages, Goa Packages, Thailand Packages, Sri Lanka Visa, Thailand
+        Visa, Explore Goa, Explore Manali, Explore Shimla, Explore Jaipur,
+        Explore Srinagar
+      </p>
+      <h3>Corporate Travel</h3>
+      <p>
+        Corporate Travel, Corporate Hotel Booking, Corporate Flight Booking,
+        Business Travel for SME, GST Invoice for International flights, Business
+        Travel Solutions, GST Invoice for Bus, Corporate Bus booking, myBiz -
+        Best Business Travel Platform, GST Invoice for Flights, GST Invoice for
+        Corporate Travel, GST Invoice for Hotels, myBiz for Small Business, Free
+        cancellation on International Flights
+      </p>
+    </div>
+
+    <div id="footer">
+      <div id="footerlogo">
+        <img src="logo.jpg" />
+        <h1><b>NAVIGATOR</b></h1>
+      </div>
+      <div class="ftop" id="footer1">
+        <h3>Why NAVIGATOR?</h3>
+        <p>
+          Experience the ease and luxury of planning your perfect trip with our
+          comprehensive booking website! Whether you are looking for the finest
+          hotels, exquisite dining experiences, or reliable travel vehicles, our
+          platform is designed to cater to all your needs. With user-friendly
+          navigation, personalized recommendations, and exclusive deals, we
+          ensure that every aspect of your journey is seamless and enjoyable.
+          Our dedicated customer support team is available 24/7 to assist you,
+          making sure your travel plans are executed flawlessly.
+        </p>
+
+        <p>
+          Imagine waking up in a luxurious hotel room with a stunning view,
+          enjoying a gourmet breakfast at a top-rated restaurant, and exploring
+          your destination in a comfortable, well-maintained vehicle. Our
+          website makes this dream a reality by offering a curated selection of
+          the best accommodations, dining options, and travel services. We
+          prioritize your comfort and satisfaction, providing detailed reviews,
+          transparent pricing, and secure booking processes.
+        </p>
+
+        <p>
+          Trust us to provide a true-to-life experience, from booking to
+          arrival, so you can focus on making unforgettable memories. Whether
+          you are traveling for leisure or business, our platform is your
+          one-stop solution for all your travel needs. Book with us today and
+          embark on your next adventure with confidence, knowing that every
+          detail has been taken care of by experts who understand the art of
+          travel.
+        </p>
+      </div>
+
+      <div class="ftop" id="footer2">
+        <h3>Booking Flights with NAVIGATOR</h3>
+        <p>
+          Discover the ultimate convenience and luxury with our all-in-one
+          booking platform! Whether you are planning a relaxing getaway, a
+          business trip, or a culinary adventure, our website offers a seamless
+          experience to book top-rated hotels, exquisite restaurants, and
+          reliable travel vehicles. Enjoy exclusive deals, personalized
+          recommendations, and 24/7 customer support to ensure your journey is
+          nothing short of perfect. Trust us to handle all your travel needs, so
+          you can focus on creating unforgettable memories. Book now and embark
+          on your next adventure with confidence!
+        </p>
+        <div id="lern_more">
+          <h3>Learn More</h3>
+          <p><a href="#">Privacy</a></p>
+          <p><a href="#">Security</a></p>
+          <p><a href="#">Terms</a></p>
+        </div>
+      </div>
+      <div class="ftop" id="footer3">
+        <h3>Contact us</h3>
+        <p><a href="#">Help & Support</a></p>
+        <p><a href="#">Partner with us</a></p>
+        <p><a href="#">Ride with us</a></p>
+        <div id="social_link">
+          <h3>Social links</h3>
+          <img src="facebook.png" alt="image" />
+          <img src="instagram.png" alt="image" />
+          <img src="linkedin.png" alt="image" />
+          <img src="youtube.png" alt="image" />
+          <img src="Twitter_Logо.png" alt="image" />
+        </div>
+        <img src="play_store.avif" alt="img" />
+        <img src="app_store.avif" alt="img" />
+      </div>
+      <div id="fbottom"><p>Copyright © NAVIGATOR 2024</p></div>
+    </div>
+  </body>
+</html>
